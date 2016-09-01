@@ -48,20 +48,13 @@ function toWords(s) {
 }
 
 function countLetters(word){
-  var counter = 0;
-  var letterArr = word.split('')
-  for (var i = 0; i < letterArr.length; i++) {
-    if (letterArr[i]!=' '){
-      counter++;
-    }
-  }
-  totalCount += counter;
+  totalCount += word.replace(/\s/g, '').length;
 }
 
 (function countAllLetters(){
   for (var i = 1; i <= 1000; i++) {
-    if((i>100&&i<200)||(i>200&&i<300)||(i>300&&i<400)||(i>400&&i<500)||(i>500&&i<600)||(i>600&&i<700)||(i>700&&i<800)||(i>800&&i<900)||(i>900&&i<1000)){
-      totalCount+=3;
+    if (i>100 && i % 100 != 0) {
+      totalCount += 3;
     }
     countLetters(toWords(i));
   }
