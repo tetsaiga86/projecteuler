@@ -2,7 +2,7 @@ var names = [];
 const readline = require('readline');
 const fs = require('fs');
 const rl = readline.createInterface({
-  input: fs.createReadStream('names.json')
+  input: fs.createReadStream('/users/kyle/projectEuler/js/22/names.json')
 });
 
 var baseLetter = 'A'.charCodeAt(0)-1

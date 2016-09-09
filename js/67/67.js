@@ -2,7 +2,7 @@ var a = [];
 const readline = require('readline');
 const fs = require('fs');
 const rl = readline.createInterface({
-  input: fs.createReadStream('triangle.txt')
+  input: fs.createReadStream('/users/kyle/projectEuler/js/67/triangle.txt')
 });
 rl.on('line', function (line) {
   a.push(line.split(' '))
