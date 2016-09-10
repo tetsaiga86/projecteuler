@@ -14,7 +14,7 @@ function intCombo(low,high){
   numbers.sort(function(a, b) {
     return a - b;
   });
-  console.log(numbers.length, numbers)
+  console.log(numbers.length);
 }
 
 intCombo(2,100)
